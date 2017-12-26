@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button>点击按钮</button> <button>去遮罩</button>
+    <!-- <div class="box">
+			<div class="title">
+				<span class="close">X</span>
+				<h3 class="biao">标题</h3>
+			</div>
+			<div class="content">
+				内容
+			</div>
+		</div>
+		<div class="mark"></div> -->
+</body>
+
+</html>
+<script src="js/out.js"></script>
+<script>
+    window.onload = function() {
+        var oBut = document.getElementsByTagName('button');
+        oBut[0].onclick = function() {
+            alert(1);
+            var d1 = new Dialog();
+            d1.init({});
+        }
+        oBut[1].onclick = function() {
+            var d1 = new Dialog();
+            d1.init({
+                mark: false
+            });
+        }
+    }
+</script>
